@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/engine"
-	"github.com/labstack/echo/log"
 	glog "github.com/labstack/gommon/log"
+	"github.com/zqzca/echo"
+	"github.com/zqzca/echo/engine"
+	"github.com/zqzca/echo/log"
 )
 
 type (
@@ -82,6 +82,7 @@ func WithConfig(c engine.Config) (s *Server) {
 		}),
 		logger: glog.New("echo"),
 	}
+	s.Server.TLSConfig = c.TLSConfig
 	s.ReadTimeout = c.ReadTimeout
 	s.WriteTimeout = c.WriteTimeout
 	s.Addr = c.Address
@@ -109,9 +110,14 @@ func (s *Server) Start() error {
 
 func (s *Server) startDefaultListener() error {
 	c := s.config
+	if c.TLSConfig != nil {
+		return s.ListenAndServeTLS("", "")
+	}
+
 	if c.TLSCertFile != "" && c.TLSKeyFile != "" {
 		return s.ListenAndServeTLS(c.TLSCertFile, c.TLSKeyFile)
 	}
+
 	return s.ListenAndServe()
 }
 

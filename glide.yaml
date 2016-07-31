@@ -1,4 +1,4 @@
-package: github.com/labstack/echo
+package: github.com/zqzca/echo
 import:
 - package: github.com/labstack/gommon
   subpackages:

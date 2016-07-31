@@ -1,4 +1,4 @@
-# [Echo](http://labstack.com/echo) [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](http://godoc.org/github.com/labstack/echo) [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/labstack/echo/master/LICENSE) [![Build Status](http://img.shields.io/travis/labstack/echo.svg?style=flat-square)](https://travis-ci.org/labstack/echo) [![Coverage Status](http://img.shields.io/coveralls/labstack/echo.svg?style=flat-square)](https://coveralls.io/r/labstack/echo) [![Join the chat at https://gitter.im/labstack/echo](https://img.shields.io/badge/gitter-join%20chat-brightgreen.svg?style=flat-square)](https://gitter.im/labstack/echo)
+# [Echo](http://labstack.com/echo) [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](http://godoc.org/github.com/zqzca/echo) [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/zqzca/echo/master/LICENSE) [![Build Status](http://img.shields.io/travis/zqzca/echo.svg?style=flat-square)](https://travis-ci.org/zqzca/echo) [![Coverage Status](http://img.shields.io/coveralls/zqzca/echo.svg?style=flat-square)](https://coveralls.io/r/zqzca/echo) [![Join the chat at https://gitter.im/zqzca/echo](https://img.shields.io/badge/gitter-join%20chat-brightgreen.svg?style=flat-square)](https://gitter.im/zqzca/echo)
 
 #### Fast and unfancy HTTP server framework for Go (Golang). Up to 10x faster than the rest.
 
@@ -33,7 +33,7 @@
 ### Installation
 
 ```sh
-$ go get github.com/labstack/echo/...
+$ go get github.com/zqzca/echo/...
 ```
 
 ### Hello, World!
@@ -45,8 +45,8 @@ package main
 
 import (
 	"net/http"
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/engine/standard"
+	"github.com/zqzca/echo"
+	"github.com/zqzca/echo/engine/standard"
 )
 
 func main() {
@@ -246,7 +246,7 @@ Middleware | Description
 Middleware | Description
 :--- | :---
 [echoperm](https://github.com/xyproto/echoperm) | Keeping track of users, login states and permissions.
-[echopprof](https://github.com/mtojek/echopprof) | Adapt net/http/pprof to labstack/echo.
+[echopprof](https://github.com/mtojek/echopprof) | Adapt net/http/pprof to zqzca/echo.
 
 ### Next
 
@@ -255,8 +255,8 @@ Middleware | Description
 
 ### Need help?
 
-- [Hop on to chat](https://gitter.im/labstack/echo)
-- [Open an issue](https://github.com/labstack/echo/issues/new)
+- [Hop on to chat](https://gitter.im/zqzca/echo)
+- [Open an issue](https://github.com/zqzca/echo/issues/new)
 
 ## Support Us
 
@@ -277,8 +277,8 @@ Middleware | Description
 ## Credits
 - [Vishal Rana](https://github.com/vishr) - Author
 - [Nitin Rana](https://github.com/nr17) - Consultant
-- [Contributors](https://github.com/labstack/echo/graphs/contributors)
+- [Contributors](https://github.com/zqzca/echo/graphs/contributors)
 
 ## License
 
-[MIT](https://github.com/labstack/echo/blob/master/LICENSE)
+[MIT](https://github.com/zqzca/echo/blob/master/LICENSE)

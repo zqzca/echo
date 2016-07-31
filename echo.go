@@ -8,9 +8,9 @@ Example:
 	import (
 	    "net/http"
 
-	    "github.com/labstack/echo"
-	    "github.com/labstack/echo/engine/standard"
-	    "github.com/labstack/echo/middleware"
+	    "github.com/zqzca/echo"
+	    "github.com/zqzca/echo/engine/standard"
+	    "github.com/zqzca/echo/middleware"
 	)
 
 	// Handler
@@ -50,8 +50,8 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/labstack/echo/engine"
-	"github.com/labstack/echo/log"
+	"github.com/zqzca/echo/engine"
+	"github.com/zqzca/echo/log"
 	glog "github.com/labstack/gommon/log"
 )
 

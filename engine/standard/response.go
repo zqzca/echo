@@ -6,8 +6,8 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/labstack/echo/engine"
-	"github.com/labstack/echo/log"
+	"github.com/zqzca/echo/engine"
+	"github.com/zqzca/echo/log"
 )
 
 type (

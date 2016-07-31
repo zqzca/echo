@@ -1,13 +1,14 @@
 package engine
 
 import (
+	"crypto/tls"
 	"io"
 	"mime/multipart"
 	"time"
 
 	"net"
 
-	"github.com/labstack/echo/log"
+	"github.com/zqzca/echo/log"
 )
 
 type (
@@ -201,6 +202,7 @@ type (
 		Listener     net.Listener  // Custom `net.Listener`. If set, server accepts connections on it.
 		TLSCertFile  string        // TLS certificate file path.
 		TLSKeyFile   string        // TLS key file path.
+		TLSConfig    *tls.Config   // TLS Configuration
 		ReadTimeout  time.Duration // Maximum duration before timing out read of the request.
 		WriteTimeout time.Duration // Maximum duration before timing out write of the response.
 	}

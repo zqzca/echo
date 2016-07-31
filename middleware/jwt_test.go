@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/dgrijalva/jwt-go"
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/test"
+	"github.com/zqzca/echo"
+	"github.com/zqzca/echo/test"
 	"github.com/stretchr/testify/assert"
 )
 
